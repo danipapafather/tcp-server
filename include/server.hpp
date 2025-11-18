@@ -15,8 +15,7 @@ namespace server {
         char _recv_data[1024];
         bool _running;
         std::string _response;
-        
-        void listen();
+
     public:
        tcp_server(std::uint16_t port);
        ~tcp_server();
