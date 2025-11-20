@@ -25,7 +25,7 @@ namespace server {
 
        void start();
        void send(std::string message);
-       void set_response(std::string res) { _response = res; }
+       void set_response(std::string res);
 
        std::string get_rec_data();
        bool is_running();

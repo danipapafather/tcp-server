@@ -59,6 +59,8 @@ server::tcp_server::~tcp_server() {
     close(_client_sock);
 };
 
+void server::tcp_server::set_response(std::string res) { _response = res; }
+
 std::string server::tcp_server::get_rec_data() { return _recv_data; }
 
 bool server::tcp_server::is_running() { return _running; }
