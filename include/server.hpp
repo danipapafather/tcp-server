@@ -5,6 +5,9 @@
 #include <string>
 #include <netinet/in.h>
 
+#define MAX_RECV_SIZE 1024
+
+
 namespace server {
     class tcp_server {
     private:
@@ -12,7 +15,7 @@ namespace server {
         std::int32_t _sock;
         sockaddr_in _saddr_in;
         int _client_sock;
-        char _recv_data[1024];
+        char _recv_data[MAX_RECV_SIZE];
         bool _running;
         std::string _response;
 

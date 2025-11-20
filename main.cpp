@@ -16,7 +16,7 @@ int main(int argc, const char** argv) {
     std::uint16_t port = stous(argv[1]);
     server::tcp_server server(port);
 
-    server.set_response("aaaaa");
+    server.set_response("test response");
     server.start();
     std::cout << server.get_rec_data();
     
